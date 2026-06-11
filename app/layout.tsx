@@ -17,7 +17,7 @@ export default function RootLayout({
         <html lang="en">
             <body>
                 <AppHeader />
-                <main className="h-[calc(100vh-61px)]">
+                <main className="min-h-[calc(100vh-61px)]">
                     <div className="container h-full">{children}</div>
                 </main>
                 <AppFooter />

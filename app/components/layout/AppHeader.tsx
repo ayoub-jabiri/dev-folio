@@ -36,7 +36,7 @@ export default function AppHeader() {
     ];
 
     return (
-        <header className="bg-(--background-color) py-2 border-b border-[#ddd]">
+        <header className="bg-(--background-color) py-4 border-b border-[#ddd]">
             <div className="container">
                 <nav className="flex justify-between items-center">
                     <Link
@@ -50,7 +50,7 @@ export default function AppHeader() {
                             <li key={link.id}>
                                 <Link
                                     href={link.path}
-                                    className="block capitalize py-2 main-transition hover:text-(--green-color) hover:underline"
+                                    className="capitalize main-transition hover:text-(--green-color) hover:underline"
                                 >
                                     {link.title}
                                 </Link>

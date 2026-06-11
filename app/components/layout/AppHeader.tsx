@@ -43,7 +43,7 @@ export default function AppHeader() {
                         href="/"
                         className="text-(--green-color) text-xl font-bold"
                     >
-                        DevArchitect
+                        John Doe
                     </Link>
                     <ul className="flex gap-5">
                         {navLinks.map((link) => (

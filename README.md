@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 DevFolio — Professional Developer Portfolio
 
-## Getting Started
+> A modern, high-performance, and fully-typed developer portfolio built with Next.js and TypeScript, designed to showcase a developer's identity, skills, and projects efficiently.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📌 Project Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+In the web development world, a portfolio is often the first point of contact between a developer and a recruiter or client. **DevFolio** serves as a clean, structured professional showcase.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The core objective of this project is to master data modeling using strict **TypeScript** interfaces and build modular, reusable React components with typed props inside a **Next.js** multi-page ecosystem.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+* **Framework:** [Next.js](https://nextjs.org/) (Multi-page Architecture / App Router)
+* **Language:** [TypeScript](https://www.typescriptlang.org/) (Strictly Typed)
+* **Styling:** Tailwind CSS *(or your preferred CSS framework)*
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🌟 Key Features
 
-## Deploy on Vercel
+### 1. 🏠 Home Page (Landing Page)
+* **Hero Section:** High-impact introduction featuring name, professional title (e.g., "Fullstack Developer"), and a short catchy bio.
+* **Call-to-Action (CTA):** Smooth navigation button redirecting users straight to the Portfolio page.
+* **Featured Showcase:** Quick overview section highlighting 2 or 3 major projects in a grid format.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 2. 👨‍💻 About Page (Personal Presentation)
+* Bio section accompanied by a profile picture or custom avatar.
+* **Professional Timeline:** Chronological list of education and work experience (minimum of 2 entries) containing: Title, Company/School, Period, and Description.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3. 📂 Portfolio Page (Projects Showcase)
+* Comprehensive catalog displaying a minimum of 4 development projects.
+* **Reusable Component:** Integration of a `<ProjectCard />` component driven by typed props.
+* Each card includes: Title, short description, technical stack (array of strings), GitHub repository link, and a live demo URL.
+* **Data Management:** All data is strictly typed and centralized inside `data/projects.ts`.
+
+### 4. ⚡ Skills Page (Technical Competencies)
+* Grouped skill categorization (e.g., Frontend, Backend, Tools).
+* **Reusable Component:** Features a `<SkillBadge />` component displaying the skill name, proficiency level (Beginner / Intermediate / Advanced), and a corresponding icon or emoji.
+* **Data Management:** Centralized and managed within `data/skills.ts`.
+
+### 5. ✉️ Contact Page
+* Visually complete contact form including Name, Email, and Message fields.
+* Quick-access links to social networks (GitHub, LinkedIn) and a direct clickable mailto link.
+
+### 6. 🗺️ Global Layout & Navigation
+* **Unified Layout:** Persistent global Navbar and Footer across all pages.
+* **Enhanced UX:** Dynamic active-link highlighting in the navigation bar to guide the user.
+
+---
